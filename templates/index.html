@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Page Selector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload a PDF File</h1>
+        <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+            <input type="file" name="pdf" accept="application/pdf" required>
+            <button type="submit">Upload PDF</button>
+        </form>
+    </div>
+</body>
+</html>

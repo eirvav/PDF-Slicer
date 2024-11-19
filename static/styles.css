@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#pdf-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pdf-page {
+    margin: 5px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.pdf-page.selected {
+    border-color: #007bff;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input[type="file"] {
+    display: block;
+    margin: 20px auto;
+}
+
+form {
+    text-align: center;
+}

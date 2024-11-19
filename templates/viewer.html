@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PDF Viewer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Select Pages to Keep</h1>
+        <div id="pdf-container"></div>
+        <button id="process-btn">Download Modified PDF</button>
+    </div>
+
+    <!-- Include PDF.js library -->
+    <script src="{{ url_for('static', filename='pdfjs/pdf.js') }}"></script>
+    <script>
+        const pdfFilename = "{{ filename }}";
+    </script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
